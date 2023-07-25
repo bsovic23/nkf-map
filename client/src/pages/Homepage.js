@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import Components
 import HomeNavbar from '../components/HomeNavbar';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Homepage() {
     const navChoices = [
@@ -14,6 +16,9 @@ function Homepage() {
     ]
     return(
         <section class='homepage'>
+            <header>
+                < Header />
+            </header>
             <div class="container text-center">
                 <div class="row align-items-center">
                     <div class="col">
@@ -29,6 +34,9 @@ function Homepage() {
                     </div>
                 </div>
             </div>
+            <footer>
+                <Footer />
+            </footer>
         </section>
     )
 };
