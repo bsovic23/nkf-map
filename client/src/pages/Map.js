@@ -2,13 +2,19 @@ import React, { useState } from 'react';
 import USAMap from 'react-usa-map';
 
 // Component Imports
-
+import Navbar from '../components/Navbar';
 
 // Data and Function Imports
 import { mockData } from '../data';
 import { stateStats } from '../functions';
 
 function Map() {
+
+    const navChoices = [
+        {id: 1, text: "Home"},
+        {id: 2, text: "Map"},
+        {id: 3, text: "Compare"},
+    ]
 
     const [stateResults, setStateResults] = useState("");
 
@@ -26,7 +32,7 @@ function Map() {
     return(
         <section class='map'>
             <header>
-                NAV
+                <Navbar navElements={navChoices} />
             </header>
             <div class="container text-center">
                 <div class="row align-items-center">

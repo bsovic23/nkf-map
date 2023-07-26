@@ -23,6 +23,31 @@ code {
   margin-right: 100px;
 }
 
+/* Navbar ============================= */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav {
+  display: flex;
+  margin-left: 50%;
+}
+
+.navbar .nav-link {
+  margin-right: 50px; /* Optional: Add margin between the buttons */
+}
+
+.nav button {
+  color: white;
+  background-color: teal;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Map ============================= */
 path {
   pointer-events: all;
